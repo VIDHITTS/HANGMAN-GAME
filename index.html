@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="box">
+        <h1 class="t">Hangman</h1>
+        <div class="g">
+            <div class="h">
+                <svg height="250" width="200" class="draw">
+                    <line x1="40" y1="230" x2="160" y2="230" class="n"></line>
+                    <line x1="60" y1="230" x2="60" y2="30" class="n"></line>
+                    <line x1="60" y1="30" x2="120" y2="30" class="n"></line>
+                    <line x1="120" y1="30" x2="120" y2="50" class="n"></line>
+                    
+                    <circle cx="120" cy="70" r="20" class="m hide" id="head"></circle>
+                    <line x1="120" y1="90" x2="120" y2="150" class="m hide" id="body"></line>
+                    <line x1="120" y1="110" x2="90" y2="100" class="m hide" id="larm"></line>
+                    <line x1="120" y1="110" x2="150" y2="100" class="m hide" id="rarm"></line>
+                    <line x1="120" y1="150" x2="90" y2="190" class="m hide" id="lleg"></line>
+                    <line x1="120" y1="150" x2="150" y2="190" class="m hide" id="rleg"></line>
+                </svg>
+            </div>
+            <div class="p">
+                <div class="w"></div>
+                <div class="hint">
+                    <p>Hint: <span></span></p>
+                </div>
+                <div class="tries">
+                    <p>Wrong: <span>0/6</span></p>
+                </div>
+                <div class="b"></div>
+            </div>
+        </div>
+        <div class="pop">
+            <div class="stuff">
+                <img src="" alt="result">
+                <h2>Game Over!</h2>
+                <p>Word was: <span></span></p>
+                <button class="again">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
